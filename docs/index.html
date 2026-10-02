@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad - Pillatelo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1E293B;
+      --accent: #6366F1;
+      --accent-gradient: linear-gradient(135deg, #6366F1 0%, #4F46E5 100%);
+      --bg: #0F172A;
+      --card-bg: rgba(30, 41, 59, 0.7);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --text: #F8FAFC;
+      --text-muted: #94A3B8;
+      --success: #10B981;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(99, 102, 241, 0.15);
+      color: #A5B4FC;
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .badge-icon {
+      width: 8px;
+      height: 8px;
+      background-color: var(--success);
+      border-radius: 50%;
+      box-shadow: 0 0 10px var(--success);
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+      background: linear-gradient(180deg, #FFFFFF 0%, #CBD5E1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    .hero-banner {
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 24px 28px;
+      margin-bottom: 32px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .hero-banner .icon {
+      background: var(--accent-gradient);
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      flex-shrink: 0;
+    }
+
+    .hero-banner h3 {
+      font-size: 1.15rem;
+      margin-bottom: 4px;
+      color: #FFFFFF;
+    }
+
+    .hero-banner p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .section {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 24px 28px;
+      margin-bottom: 20px;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .section:hover {
+      border-color: rgba(99, 102, 241, 0.4);
+    }
+
+    .section h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #EEF2F6;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .section h2 span {
+      color: var(--accent);
+      font-size: 1.05rem;
+    }
+
+    .section p {
+      color: #94A3B8;
+      font-size: 0.96rem;
+      line-height: 1.65;
+      margin-bottom: 12px;
+    }
+
+    .section p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-top: 8px;
+    }
+
+    li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 8px;
+      color: #CBD5E1;
+      font-size: 0.95rem;
+    }
+
+    li::before {
+      content: "•";
+      color: var(--accent);
+      font-size: 1.4rem;
+      position: absolute;
+      left: 6px;
+      top: -3px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--card-border);
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    footer strong {
+      color: var(--text);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="logo.png" alt="Pillatelo Logo" style="width: 96px; height: 96px; border-radius: 24px; margin-bottom: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.4);">
+      <br>
+      <div class="badge">
+        <span class="badge-icon"></span>
+        100% Local-First &amp; Privado
+      </div>
+      <h1>Pillatelo: Finanzas y Gastos</h1>
+      <p class="subtitle">Política de Privacidad y Tratamiento de Datos</p>
+    </header>
+
+    <div class="hero-banner">
+      <div class="icon">🛡️</div>
+      <div>
+        <h3>Tus finanzas son estrictamente tuyas</h3>
+        <p>Pillatelo fue concebida con privacidad total por diseño. No tenemos servidores centrales, no rastreamos tus transacciones ni vendemos datos a terceros. Toda tu información reside únicamente en tu dispositivo.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2><span>01.</span> Información que NO Recopilamos</h2>
+      <p>A diferencia de otras aplicaciones financieras:</p>
+      <ul>
+        <li><strong>No recopilamos datos personales:</strong> No solicitamos tu nombre real, número de documento, correo electrónico ni número de teléfono.</li>
+        <li><strong>No requerimos vinculación bancaria en la nube:</strong> No nos conectamos a tus credenciales bancarias ni APIs de bancos.</li>
+        <li><strong>No almacenamos datos en servidores remotos:</strong> No existe una base de datos central en la nube donde se guarden tus ingresos, gastos, deudas o préstamos.</li>
+        <li><strong>Sin identificadores de publicidad:</strong> No usamos el Google Advertising ID ni SDKs de rastreo comercial (como Google Analytics, AppsFlyer o Facebook SDK).</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2><span>02.</span> Almacenamiento Local (SQLite)</h2>
+      <p>Todos los registros creados por el usuario (cuentas, movimientos, categorías, presupuestos, préstamos, metas de ahorro y configuración de seguridad) se almacenan de manera local en el almacenamiento aislado (sandbox) del sistema operativo Android utilizando el motor de base de datos <strong>SQLite</strong>.</p>
+      <p>El acceso a este espacio está restringido exclusivamente a la aplicación por los mecanismos de seguridad propios del sistema operativo.</p>
+    </div>
+
+    <div class="section">
+      <h2><span>03.</span> Protección mediante Código de Acceso (PIN)</h2>
+      <p>Pillatelo permite configurar un código PIN de 4 dígitos para proteger el ingreso a la aplicación. Dicho PIN se procesa de forma hash y se guarda de forma segura y local en tu dispositivo, garantizando que nadie sin tu autorización física pueda ingresar a consultar tu información.</p>
+    </div>
+
+    <div class="section">
+      <h2><span>04.</span> Permisos Requeridos por el Sistema</h2>
+      <p>Pillatelo solicita el mínimo estricto de permisos para operar:</p>
+      <ul>
+        <li><strong>Notificaciones (POST_NOTIFICATIONS):</strong> Utilizado únicamente para emitir recordatorios locales en tu dispositivo (por ejemplo, pagos pendientes de préstamos o fechas límite de metas). No se envían notificaciones push desde servidores remotos.</li>
+        <li><strong>Almacenamiento / Compartir archivos:</strong> Requerido temporalmente cuando solicitas exportar tus reportes en formato <strong>PDF</strong> o <strong>CSV</strong> a través del menú de la aplicación, para enviarlo o guardarlo en la aplicación de tu preferencia.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2><span>05.</span> Control y Eliminación Permanente de Datos</h2>
+      <p>El usuario es el único propietario de sus registros. En cualquier momento puedes:</p>
+      <ul>
+        <li>Eliminar registros, cuentas o movimientos específicos desde la interfaz.</li>
+        <li>Borrar la totalidad de los datos desde la opción <em>Ajustes &gt; Aplicaciones &gt; Pillatelo &gt; Borrar datos</em> de tu teléfono.</li>
+        <li>Desinstalar la aplicación: esto elimina automáticamente la base de datos local y todos los registros asociados de forma irrevocable.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2><span>06.</span> Cumplimiento con Google Play y Legislación</h2>
+      <p>Esta política cumple íntegramente con los requisitos de la sección <strong>Seguridad de los Datos (Data Safety)</strong> de Google Play Console. Declaramos que:</p>
+      <ul>
+        <li>La aplicación no comparte ningún dato con terceros.</li>
+        <li>La aplicación no recopila datos para transmisión remota.</li>
+        <li>Todo el procesamiento de datos se realiza en el dispositivo.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2><span>07.</span> Contacto del Desarrollador</h2>
+      <p>Para preguntas, aclaraciones o retroalimentación sobre esta política o el funcionamiento de Pillatelo, puedes contactar al desarrollador responsable mediante correo electrónico:</p>
+      <p style="margin-top: 8px;"><strong>Contacto:</strong> amilcar.yujra@gmail.com</p>
+    </div>
+
+    <footer>
+      <p><strong>Pillatelo</strong> — Finanzas y Gastos &copy; 2026. Todos los derechos reservados.</p>
+      <p style="margin-top: 4px;">Versión 1.0.0 &bull; Última actualización: Octubre de 2026</p>
+    </footer>
+  </div>
+</body>
+</html>
